@@ -1,7 +1,6 @@
 # dedupe
 A utility program that deletes files from your disk if they are backed up in a different directory/drive.
-## Requirements
-**Python 3.6** is required.  
+## Requirements 
 This program has been developed on macOS, but should work on any Unix system. I can't vouch for Windows...
 ## Instructions
 First, you'll want to make two or more **manifest files** by running this command:
