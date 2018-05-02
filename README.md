@@ -7,7 +7,7 @@ First, you'll want to make two or more **manifest files** by running this comman
 ```
 $ python3 manifest.py
 ```
-This command will walk you through the process of creating a manifest. **Manifest files** contain md5 hashes[1] of the files in all recursively-searched subdirectories of the manifest's root (which is chosen at creation time).
+This command will walk you through the process of creating a manifest. **Manifest files** contain md5 hashes[^1] of the files in all recursively-searched subdirectories of the manifest's root (which is chosen at creation time).
 Once you've cataloged the files in your system, run:
 ```
 $ python3 dedupe.py
@@ -16,7 +16,7 @@ Using the menu, you will need to select the manifest files you created previousl
 
 
 ---------------------------
-[1] Here is the code used to hash files:
+[1]: Here is the code used to hash files (based on code shown by Raymond Hettinger):
 ```python
 def file_hash(path):
     hasher = hashlib.md5()
